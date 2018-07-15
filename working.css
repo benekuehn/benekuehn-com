@@ -1,0 +1,69 @@
+
+@keyframes working-animation {
+
+  0% {
+
+    left: 0%;
+
+  }
+
+  50% {
+
+      left: 58%;
+
+  }
+
+  100% {
+
+      left: 0%;
+
+  }
+
+}
+
+.working {
+
+  height: 5px;
+
+}
+
+.working .bar {
+
+  width: 30%;
+  position: absolute;
+  height: 12px;
+  background-color: #0033CC;
+  animation-name: working-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+h1 {
+
+  display: none;
+
+}
+
+
+@media only screen and (max-width: 500px){
+
+  h1{
+
+      display: inline;
+      font-size: 1.5em;
+
+  }
+
+  .large-break{
+
+    display: none;
+
+  }
+
+  .working .bar{
+
+      display: none;
+
+  }

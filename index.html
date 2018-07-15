@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!-- Hey you! Great that you found it but hands off, that's my code. -->
+
 <html lang="de">
  <head>
 
@@ -9,184 +12,31 @@
 
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link href="github.com/necolas/normalize.css" rel="stylesheet">
+    <link href="global.CSS" rel="stylesheet">
+    <link href="working.CSS" rel="stylesheet">
+
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
   </head>
-
-  <style type="text/css">
-
-      body{
-
-        background: #fff;
-
-      }
-
-			#background{
-
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				overflow: hidden;
-				/*background-color: #222;*/
-				border-width: 16px;
-				border-style: solid;
-				border-width: 16px;
-				border-color: #fff;
-				box-sizing: border-box;
-
-			}
-
-			.block_content{
-
-			    position: relative;
-			    top: 50%;
-			    box-sizing: border-box;
-			    -webkit-transform: translatey(-50%);
-			    -moz-transform: translatey(-50%);
-			    -ms-transform: translatey(-50%);
-			    transform: translatey(-50%);
-			    display: block;
-			    text-align: left;
-			    text-rendering: optimizeLegibility;
-			    font-family: 'Roboto', Helvetica, sans-serif;
-			    font-style: normal;
-			    font-size: 17px;
-			    line-height: 23px;
-			    text-transform: none;
-			    letter-spacing: 0em;
-			    color: #555;
-			    margin: 0 auto;
-
-			}
-
-			.block_content.text{
-
-				-webkit-max-width: 510px !important;
-			    max-width: 510px !important;
-
-
-			}
-
-			h1{
-
-			    font-weight: 700;
-			    color: #000;
-
-			}
-
-			h3{
-
-			    font-weight: 500;
-
-			}
-
-
-			p{
-
-			    font-weight: 500;
-
-			}
-
-			a{
-
-			    color: #999;
-			    text-decoration: none;
-
-			    -webkit-transition-duration:0.2s;
-			    -webkit-transition-delay:0s;
-			    -webkit-transition-timing-function:ease-in-out;
-
-			    transition-duration:0.2s;
-			    transition-delay:0s;
-			    transition-timing-function:ease-in-out;
-
-			}
-
-			a:hover{
-
-			    margin-bottom: 5px;
-			    border-bottom: 3px solid;
-			    visibility:inherit;
-			    color:#555555;
-
-			}
-
-
-			@keyframes working-animation {
-
-				0% {
-
-					left: 0%;
-
-				}
-
-				50% {
-
-			    	left: 58%;
-
-				}
-
-				100% {
-
-			    	left: 0%;
-
-				}
-
-			}
-
-			.working {
-
-				height: 5px;
-
-			}
-
-			.working .bar {
-
-				width: 30%;
-				position: absolute;
-				height: 12px;
-				background-color: #0033CC;
-				animation-name: working-animation;
-				animation-duration: 5s;
-				animation-iteration-count: infinite;
-				animation-timing-function: ease-in-out;
-
-			}
-
-			h1 {
-
-				display: none;
-
-			}
-
-
-		@media only screen and (max-width: 500px){
-
-		    h1{
-
-		        display: inline;
-		        font-size: 1.5em;
-
-		    }
-
-		    .large-break{
-
-		    	display: none;
-
-		    }
-
-		    .working .bar{
-
-		        display: none;
-
-		    }
-
-
-
-		}
-
-	</style>
 
 	<body>
 
@@ -203,11 +53,8 @@
 		        </div>
 
 		        <h1>Hi, Ich bin Bene Kuehn.</h1>
-		        <!--<h3>Ich liebe Probleme und finde den einfachsten Weg <br class="large-break" /> sie zu lösen. Dabei schaffe ich digitale Nutzererlebnisse mit einem hohen Anspruch an Funktionalität und Design.</h3>-->
-		       <h3><br>Zur Zeit mache ich ein Praktikum im UX Design bei Denkwerk in Köln.</h3>
-		        <p> <a href="mailto:bene@benekuehn.de">nachricht</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="cv/Bene-Kuehn_Lebenslauf.pdf">lebenslauf</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://work.benekuehn.de">portfolio</a></p>
-
-
+		        <h3><br>Zur Zeit mache ich ein Praktikum im UX Design bei <a href="https://denkwerk.com" target="_blank">Denkwerk</a> in Köln.</h3>
+		        <nav> <a href="mailto:bene@benekuehn.de">nachricht</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="cv/Bene-Kuehn_Lebenslauf.pdf">lebenslauf</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://work.benekuehn.de">portfolio</a></nav>
 
 
 		    </div>
