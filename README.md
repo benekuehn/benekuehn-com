@@ -1,2 +1,2 @@
-# website
-My own website.
+# Personal Website
+My own website. Just for me.
