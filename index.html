@@ -51,13 +51,48 @@
 		    <div class="block_content text">
 
 
-		        <div class="working">
+		        <!--<div class="working">
 		        	<div class="bar"></div>
-		        </div>
+		        </div>-->
 
-		        <h1>Hi, Ich bin Bene Kuehn.</h1>
-		        <h3><br>Ich studiere Grafikdesign &amp; visuelle Kommunikation. Nebenbei arbeite ich als Experience Designer.</h3>
-		        <nav> <a href="mailto:bene@benekuehn.de">nachricht</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="cv/Bene-Kuehn_Lebenslauf.pdf">lebenslauf</a></nav>
+            <!-- Display the countdown timer in an element -->
+          <h1 id="timer"></h1>
+
+          <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("Apr 1, 2019 09:00:00").getTime();
+
+          // Update the count down every 1 second
+          var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("timer").innerHTML = "Eine neue Herausforderung!";
+              document.getElementById("paragraph").innerHTML = "<br>Ich mache jetzt ein Praktikum bei CORE SE als Student Professional Consulting.";
+            }
+            }, 1000);
+            </script>
+
+		        <h1 id="alternativeHeadline">Hi, Ich bin Bene Kuehn.</h1>
+		        <h3 id="paragraph"><br>Noch wenige Wochen und ich habe meinen Bachelor. Danach startet eine neue Herausforderung!</h3>
+		        <nav> <a href="mailto:bene@benekuehn.de">Nachricht</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="cv/Bene-Kuehn_Lebenslauf.pdf">Lebenslauf</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/benediktkuehn">LinkedIn</a></nav>
 
 
 		    </div>
