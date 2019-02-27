@@ -55,12 +55,12 @@
 
 @media only screen and (max-width: 500px){
 
-  #alternativeHeadline{
+  /**#alternativeHeadline{
 
       display: inline;
       font-size: 1.5em;
 
-  }
+  }**/
 
   .large-break{
 
