@@ -95,3 +95,52 @@ nav a:hover{
     color:#555555;
 
 }
+
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    
+    background-color: black;
+    color: black;
+  
+  }
+  
+  #background{
+
+    /*background-color: #222;*/
+    border-color: #555;
+
+  }
+
+  .block_content{
+    
+    color: white;
+  
+  }
+
+  h1{
+
+    color: #0033CC;
+
+  }
+
+
+  h3 a{
+
+    color: white;
+  
+  }
+
+  nav a{
+
+    color: white;
+    
+  }
+
+  nav a:hover{
+
+    color: white;
+
+  }
+  
+}
