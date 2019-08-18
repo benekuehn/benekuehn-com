@@ -2,7 +2,7 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteCond %{HTTP:Accept-Language} ^en [NC]
-RewriteRule ^$ https://benekuehn.com [L,R=301]
+RewriteCond %{HTTP:Accept-Language} ^de [NC]
+RewriteRule ^$ https://benekuehn.com/de [L,R=301]
 
 ErrorDocument 404 https://benekuehn.de/404.html
