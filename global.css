@@ -33,10 +33,10 @@ body{
     display: block;
     text-align: left;
     text-rendering: optimizeLegibility;
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-size: 17px;
-    line-height: 23px;
+    font-size: 100%;
+    line-height: 1.5;
     text-transform: none;
     letter-spacing: 0em;
     color: #555;
@@ -45,9 +45,10 @@ body{
 }
 
 .block_content.text{
-
-  -webkit-max-width: 510px !important;
-    max-width: 510px !important;
+  -webkit-max-width: 510px;
+    max-width: 510px;
+  -webkit-max-width: 55ch;
+    max-width: 55ch;
 
 
 }
@@ -55,7 +56,7 @@ body{
 h1{
 
     font-weight: 700;
-    color: #0033CC;;
+    color: #0033CC;
 
 }
 
@@ -69,6 +70,12 @@ h3 a{
 
     color: #555;
     text-decoration: none;
+
+}
+
+p {
+
+    font-size: 120%
 
 }
 
@@ -96,15 +103,20 @@ nav a:hover{
 
 }
 
+#alternativeHeadline{
+
+      display: none;
+
+  }
 
 @media screen and (prefers-color-scheme: dark) {
   body {
-    
+
     background-color: #222;
     color: #222;
-  
+
   }
-  
+
   #background{
 
     /*background-color: #222;*/
@@ -113,9 +125,9 @@ nav a:hover{
   }
 
   .block_content{
-    
+
     color: white;
-  
+
   }
 
   h1{
@@ -128,13 +140,13 @@ nav a:hover{
   h3 a{
 
     color: white;
-  
+
   }
 
   nav a{
 
     color: white;
-    
+
   }
 
   nav a:hover{
@@ -142,5 +154,21 @@ nav a:hover{
     color: white;
 
   }
-  
+
+}
+
+@media print{
+
+  #alternativeHeadline{
+
+      display: inherit;
+
+  }
+
+  #timer{
+
+      display: none;
+
+  }
+
 }
