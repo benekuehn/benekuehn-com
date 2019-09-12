@@ -9,7 +9,7 @@
 
   50% {
 
-      left: 61%;
+      left: 68%;
 
   }
 
@@ -24,6 +24,7 @@
 .working {
 
   height: 5px;
+  margin-bottom: 50px;
 
 }
 
@@ -55,12 +56,12 @@
 
 @media only screen and (max-width: 500px){
 
-  /**#alternativeHeadline{
+  #alternativeHeadline{
 
-      display: inline;
+      display: inherit;
       font-size: 1.5em;
 
-  }**/
+  }
 
   .large-break{
 
