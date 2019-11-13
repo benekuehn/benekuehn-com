@@ -53,10 +53,37 @@ body{
 
 }
 
+.list_content{
+
+    position: relative;
+    display: block;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1.5;
+    text-transform: none;
+    letter-spacing: 0em;
+    color: #555;
+    margin: 0 auto;
+    -webkit-max-width: 510px;
+      max-width: 510px;
+    -webkit-max-width: 55ch;
+      max-width: 55ch;
+
+}
+
 h1{
 
     font-weight: 700;
     color: #0033CC;
+
+}
+
+h1.black {
+
+    color: black;
 
 }
 
@@ -79,7 +106,7 @@ p {
 
 }
 
-nav a{
+a{
 
     color: #999;
     text-decoration: none;
@@ -94,12 +121,24 @@ nav a{
 
 }
 
-nav a:hover{
+a:hover{
 
     margin-bottom: 5px;
     border-bottom: 3px solid;
     visibility:inherit;
     color:#555555;
+
+}
+
+ul {
+
+  padding-left: 1em;
+
+}
+
+li {
+
+  list-style: none;
 
 }
 
