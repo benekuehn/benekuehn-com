@@ -1,0 +1,78 @@
+<head>
+  <meta charset="UTF-8">
+  <title>benekuehn – Button </title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  
+  </head>
+
+  <style type="text/css">
+  	
+
+			#background{
+				
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				/*background-color: #222;*/
+				border-width: 16px;
+				border-style: solid;
+				border-width: 16px;
+				border-color: blue;
+				box-sizing: border-box;
+
+			}
+
+			.block_content{
+
+			    position: relative;
+			    top: 50%;
+			    box-sizing: border-box;
+			    -webkit-transform: translatey(-50%);
+			    -moz-transform: translatey(-50%);
+			    -ms-transform: translatey(-50%);
+			    transform: translatey(-50%);
+			    text-align: center;
+
+			}
+
+
+
+		}
+
+	</style>
+
+	<body>
+
+	<!-- content -->
+
+	    <div id="background">
+
+	    	<div class="block_content">
+
+	    	<button id="ButtonToShow" onclick="ButtonClicked()"> Klick auf mich! </button>
+	      
+		    <div id="hiddenMessage" style="display: none;">
+
+		        <h1 style="font-family: Roboto; font-weight: 900; font-size: 2em; color: blue;">Hi.</h1>
+
+
+		    </div>
+
+		    </div>
+
+		</div>
+  
+  
+
+    <script  src="ButtonAndIf.js"></script>
+
+
+
+
+</body>
+
+</html>

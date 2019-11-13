@@ -1,0 +1,255 @@
+﻿body {
+  margin:0px;
+  background-image:none;
+  position:static;
+  left:auto;
+  width:1440px;
+  margin-left:0;
+  margin-right:0;
+  text-align:left;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+#u21_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1440px;
+  height:1024px;
+  background:inherit;
+  background-color:rgba(237, 237, 237, 1);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+#u21 {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1440px;
+  height:1024px;
+}
+#u21_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:0px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u22_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:32px;
+  height:23px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'Quasimoda-ExtraLight', 'Quasimoda ExtraLight', 'Quasimoda';
+  font-weight:200;
+  font-style:normal;
+  font-size:16px;
+  color:#272727;
+}
+#u22 {
+  border-width:0px;
+  position:absolute;
+  left:98px;
+  top:97px;
+  width:32px;
+  height:23px;
+  font-family:'Quasimoda-ExtraLight', 'Quasimoda ExtraLight', 'Quasimoda';
+  font-weight:200;
+  font-style:normal;
+  font-size:16px;
+  color:#272727;
+}
+#u22_div.mouseOver {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:32px;
+  height:23px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'Quasimoda-Bold', 'Quasimoda Bold', 'Quasimoda';
+  font-weight:700;
+  font-style:normal;
+  font-size:16px;
+  color:#272727;
+}
+#u22.mouseOver {
+}
+#u22_text {
+  border-width:0px;
+  position:absolute;
+  left:2px;
+  top:2px;
+  width:28px;
+  white-space:nowrap;
+}
+#u23_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:456px;
+  height:60px;
+}
+#u23 {
+  border-width:0px;
+  position:absolute;
+  left:141px;
+  top:418px;
+  width:456px;
+  height:60px;
+}
+#u23_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:0px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u24_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:511px;
+  height:21px;
+}
+#u24 {
+  border-width:0px;
+  position:absolute;
+  left:876px;
+  top:495px;
+  width:511px;
+  height:21px;
+}
+#u24_img.mouseOver {
+}
+#u24.mouseOver {
+}
+#u24_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:0px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u25_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:128px;
+  height:40px;
+}
+#u25 {
+  border-width:0px;
+  position:absolute;
+  left:1084px;
+  top:612px;
+  width:128px;
+  height:40px;
+}
+#u25_img.mouseOver {
+}
+#u25.mouseOver {
+}
+#u25_img.mouseDown {
+}
+#u25.mouseDown {
+}
+#u25_img.selected {
+}
+#u25.selected {
+}
+#u25_img.disabled {
+}
+#u25.disabled {
+}
+#u25_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:0px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u26 {
+  position:absolute;
+  left:1136px;
+  top:496px;
+  touch-action:none;
+}
+#u26_state0 {
+  position:relative;
+  left:0px;
+  top:0px;
+  width:19px;
+  height:19px;
+  background-image:none;
+}
+#u26_state0_content {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1px;
+  height:1px;
+}
+#u27_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:19px;
+  height:19px;
+}
+#u27 {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:19px;
+  height:19px;
+}
+#u27_img.mouseOver {
+}
+#u27.mouseOver {
+}
+#u27_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:0px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
