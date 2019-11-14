@@ -175,20 +175,19 @@ li {
 
   }
 
+  h1.black {
 
-  h3 a{
+      color: white;
+
+  }
+
+  a{
 
     color: white;
 
   }
 
-  nav a{
-
-    color: white;
-
-  }
-
-  nav a:hover{
+  a:hover{
 
     color: white;
 
