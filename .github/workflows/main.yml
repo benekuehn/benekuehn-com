@@ -7,5 +7,5 @@ jobs:
     - uses: tibor19/static-website-deploy@v1
       with:
         enabled-static-website: 'true'
-        folder: 'MyFolder'
+        folder: 'de'
         connection-string: ${{ secrets.CONNECTION_STRING }}
