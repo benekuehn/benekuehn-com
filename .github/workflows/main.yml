@@ -1,0 +1,19 @@
+- name: Azure Static Website Deploy
+  uses: feeloor/azure-static-website-deploy@v0.1.0
+  with:
+    # The name of the directory you want to upload
+    SOURCE_DIR: "./PersWebsite"
+    # Your Azure Client ID
+    AZURE_CLIENT_ID: fbecac60-e2b9-447b-b973-bbdbfab4c0ab
+    # Your Azure TENANT ID
+    AZURE_TENANT_ID: a015ef66-de78-4067-a303-612e5a036b9a
+    # Your Azure Secret
+    AZURE_SECRET: /naCuGRYAzlGNhhIn5ew1c6vYAp]u..8
+    # Your Azure Subscription ID
+    AZURE_SUBSCRIPTION_ID: 153198ca-d874-4007-ad13-3e84a166cd62
+    # Your Azure Storage Account Name
+    AZURE_STORAGE_ACCOUNT_NAME: perswebsite
+    # The index document that you specify when you enable static website hosting, appears when users open the site and dont specify a specific file.
+    AZURE_INDEX_DOCUMENT_NAME: index.html
+    # If the server returns a 404 error, and you have not specified an error document when you enabled the website, then a default 404 page is returned to the user.
+    AZURE_ERROR_DOCUMENT_NAME: # optional
