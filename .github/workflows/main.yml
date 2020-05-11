@@ -10,13 +10,13 @@ jobs:
       - uses: feeloor/azure-static-website-deploy@master
         env:
           # The name of the directory you want to upload
-          SOURCE_DIR: "./PersWebsite"
+          SOURCE_DIR: "./dist/PersWebsite"
           # Your Azure Client ID
           AZURE_CLIENT_ID: "fbecac60-e2b9-447b-b973-bbdbfab4c0ab"
           # Your Azure TENANT ID
           AZURE_TENANT_ID: "a015ef66-de78-4067-a303-612e5a036b9a"
           # Your Azure Secret
-          AZURE_SECRET: AZURE_SECRET
+          AZURE_SECRET: ${{ AZURE_SECRET }}
           # Your Azure Subscription ID
           AZURE_SUBSCRIPTION_ID: "153198ca-d874-4007-ad13-3e84a166cd62"
           # Your Azure Storage Account Name
