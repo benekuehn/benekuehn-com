@@ -11,7 +11,7 @@ jobs:
         if: contains(github.ref, 'master') || contains(github.base_ref, 'master')
         env:
           # The name of the directory you want to upload
-          SOURCE_DIR: "./dist/PersWebsite"
+          SOURCE_DIR: "./PersWebsite"
           # Your Azure Client ID
           AZURE_CLIENT_ID: "fbecac60-e2b9-447b-b973-bbdbfab4c0ab"
           # Your Azure TENANT ID
