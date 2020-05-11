@@ -8,6 +8,7 @@ jobs:
     steps:
 
       - uses: feeloor/azure-static-website-deploy@master
+        if: contains(github.ref, 'master') || contains(github.base_ref, 'master')
         env:
           # The name of the directory you want to upload
           SOURCE_DIR: "./dist/PersWebsite"
