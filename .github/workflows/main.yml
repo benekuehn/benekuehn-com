@@ -10,7 +10,7 @@ jobs:
       - uses: feeloor/azure-static-website-deploy@master
         env:
           # The name of the directory you want to upload
-          SOURCE_DIR: ../../de
+          SOURCE_DIR: PersWebsite/tree/master/
           # Your Azure Client ID
           AZURE_CLIENT_ID: "fbecac60-e2b9-447b-b973-bbdbfab4c0ab"
           # Your Azure TENANT ID
