@@ -1,4 +1,10 @@
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "live/*"
+
 jobs:
   build:
     runs-on: ubuntu-latest
