@@ -1,4 +1,10 @@
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "live/*"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -7,5 +13,5 @@ jobs:
     - uses: tibor19/static-website-deploy@v1
       with:
         enabled-static-website: 'true'
-        folder: 'de'
+        folder: 'live'
         connection-string: ${{ secrets.CONNECTION_STRING }}
