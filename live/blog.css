@@ -1,0 +1,64 @@
+#background{
+    overflow: auto !important;
+}
+
+
+.longertext{
+  -webkit-max-width: 750px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+img.in-text{
+
+    -webkit-max-width: 750px;
+    max-width: 750px;
+
+}
+
+p {
+    color: #555;
+    font-size: 100% !important;
+
+}
+
+h3 {
+
+    color: black !important;
+    font-size: 140%;
+}
+
+#index-page{
+
+    color: #555 !important;
+    font-size: 140%;
+}
+
+button{
+
+    position: relative;
+    max-width: 500px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    margin-left: 220px;
+
+}
+
+div #help{
+
+    position: fixed;
+    right: 50px;
+    top: 100px;
+    width: 150px;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-color: #0033cc;
+    padding-left: 25px;
+
+}
+
+#help p{
+
+    color: #0033cc;
+
+}

@@ -1,3 +1,17 @@
+html{
+
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1.5;
+  text-transform: none;
+  letter-spacing: 0em;
+  color: #555;
+
+}
+
 body{
 
   background: #fff;
@@ -31,15 +45,6 @@ body{
     -ms-transform: translatey(-50%);
     transform: translatey(-50%);
     display: block;
-    text-align: left;
-    text-rendering: optimizeLegibility;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-size: 100%;
-    line-height: 1.5;
-    text-transform: none;
-    letter-spacing: 0em;
-    color: #555;
     margin: 0 auto;
 
 }
@@ -146,7 +151,39 @@ li {
 
       display: none;
 
-  }
+}
+
+button{
+
+    height: 50px;
+    padding: 0px 20px 0px 20px;
+    border-color: #0033cc;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+    transition: all 120ms linear;
+    font-size: 1em;
+    font-weight: bold;
+    color: #0029A3;
+    background-color: white;
+    text-transform: uppercase;
+
+}
+
+button:hover{
+
+    box-shadow: 0px 7px 20px #ddd;
+    background-color: #0033cc;
+    color: white;
+    cursor: pointer;
+
+}
+
+button:active{
+
+    background-color: #002182;
+    border-color: #002182;
+}
 
 @media screen and (prefers-color-scheme: dark) {
   body {
