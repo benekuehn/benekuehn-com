@@ -13,6 +13,8 @@ img.in-text{
 
     -webkit-max-width: 750px;
     max-width: 750px;
+    width: 100%;
+    height: auto;
 
 }
 
@@ -60,5 +62,27 @@ div #help{
 #help p{
 
     color: #0033cc;
+
+}
+
+@media screen and (max-width: 1170px){
+
+    div #help{
+
+        position: absolute;
+        top: unset;
+        width: 100%;
+        max-width: 750px;
+        background-color: #0033cc;
+        padding: 5px;
+    
+    }
+
+    #help p{
+
+        color: #ffffff;
+        text-align: center;
+    
+    }
 
 }
