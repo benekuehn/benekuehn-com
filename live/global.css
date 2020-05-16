@@ -112,6 +112,25 @@ p {
 
 }
 
+nav.wide{
+
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+
+}
+
+.link-nav + .link-nav, .link-nav-wide + .link-nav-wide {
+
+  margin-left: 25px;
+
+}
+
+
 a{
 
     color: #999;
@@ -252,6 +271,31 @@ button:active{
 
       display: none;
 
+  }
+
+}
+
+@media screen and (max-width: 445px) {
+
+  nav.wide{
+
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-top: 50px;
+  
+  }
+  
+  .link-nav-wide + .link-nav-wide {
+  
+    margin-left: 0px;
+    margin-top: 20px;
+  
   }
 
 }
