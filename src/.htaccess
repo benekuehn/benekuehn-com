@@ -1,8 +1,13 @@
 RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !=""
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(.*)\.domain\.com
+RewriteRule ^(.*)$ subdomains/%1/$1 [L,NC,QSA]
 
 RewriteCond %{HTTP:Accept-Language} ^de [NC]
-RewriteRule ^$ https://benekuehn.com/de/ [L,R=301]
+RewriteRule ^$ https://www.benekuehn.com/de/ [R=301,L]
 
 ErrorDocument 404 https://benekuehn.com/404.html
