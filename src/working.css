@@ -1,5 +1,7 @@
 .working {
+
   margin-bottom: 100px;
+  
 }
 
 @media screen and (max-width: 550px){
@@ -7,5 +9,5 @@
   .working{
     margin-bottom: 60px;
   }
-  
+
 }
