@@ -24,17 +24,6 @@
     </head>
 
 	<body>
-
-	    <script language="javascript" type="text/javascript">
-            image = document.getElementsByClassName('ar-preview')
-            const a = document.createElement("a");
-            if (a.relList.supports("ar")) {
-                image.src = "not available";
-            } else {
-                image.src = "dots.png";
-            }
-
-        </script>
         
         <!-- content -->
 
@@ -44,8 +33,10 @@
 
 		        <div class="working">
                     <a class="ar" href="dots.usdz" rel="ar">
-                        <img class= "ar-preview" src="dots.png"/>
+                        <img id= "ar-preview" src="dots.png"/>
+                        <img id= "ar-label" src="BadgeARKitGlyph.svg"/>
                     </a>
+
 		        </div>
 
 		        <p id="paragraph">I am still work in progress. But after studying design & digital business, working in IT-audit and strategy consulting, I now work with a munich-based fintech as a product manager.</p>
@@ -54,6 +45,17 @@
 		    </div>
 
 		</div>
+
+        <script language="javascript" type="text/javascript">
+            label = document.getElementById('ar-label')
+            const a = document.createElement("a");
+            if (a.relList.supports("ar")) {
+                label.style.display = "block";
+            } else {
+                label.style.display = "none";
+            }
+
+        </script>
 
 	</body>
 

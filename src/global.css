@@ -91,12 +91,19 @@ h3 a{
 
 }
 
-.ar-preview {
+#ar-preview {
 
   max-width: 200px;
-  max-height: 50px;
   position: relative;
-  left: -11px;
+
+}
+
+#ar-label {
+
+  height: 25px;
+  position: relative;
+  left: 25px;
+  top: -35px;
 
 }
 
