@@ -13,10 +13,6 @@
         <title>Benedikt Kuehn</title>
 
         <!-- CSS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
         <link href="global.css" rel="stylesheet">
         <link href="working.css" rel="stylesheet">
 
@@ -29,7 +25,18 @@
 
 	<body>
 
-	    <!-- content -->
+	    <script language="javascript" type="text/javascript">
+            image = document.getElementsByClassName('ar-preview')
+            const a = document.createElement("a");
+            if (a.relList.supports("ar")) {
+                image.src = "not available";
+            } else {
+                image.src = "dots.png";
+            }
+
+        </script>
+        
+        <!-- content -->
 
 	    <div id="background">
 
