@@ -8,3 +8,5 @@ RewriteCond %{HTTP_HOST} ^(.*)\.domain\.com
 RewriteRule ^(.*)$ subdomains/%1/$1 [L,NC,QSA]
 
 ErrorDocument 404 https://benekuehn.com/404.html
+
+Redirect /knowledge https://benekuehn.notion.site/Knowledge-Base-53880e42e7054779934d1ee99a27632f
