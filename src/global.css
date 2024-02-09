@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
+:root {
+  --light-bg-color: #EEE;
+  --dark-bg-color: #1A1A1A;
+  --light-text-color: #AAA;
+  --lighter-text-color: #EEE;
+  --dark-text-color: #444;
+  --darker-text-color: #000;
+}
+
 html{
 
   text-align: left;
@@ -11,61 +20,43 @@ html{
   line-height: 1.5;
   text-transform: none;
   letter-spacing: 0em;
-  color: #555;
+  color: var(--light-text-color);
 
 }
 
-body{
+body {
 
-  background: #eee;
+  background: var(--light-bg-color);
   margin: 0;
 
 }
 
-#background{
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.content-wrapper {
 
-}
-
-.block_content{
-
-  position: relative;
-  top: 50%;
-  box-sizing: border-box;
-  -webkit-transform: translatey(-50%);
-  -moz-transform: translatey(-50%);
-  -ms-transform: translatey(-50%);
-  transform: translatey(-50%);
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 
 }
 
-.block_content.text{
+.content {
+  padding: 0 16px;
+}
 
-  max-width: 500px;
+a.dots:hover {
+
+  border-bottom: none;
+  cursor: default;
 
 }
 
 #ar-preview {
 
   max-width: 200px;
-  position: relative;
-
-}
-
-#ar-label {
-
-  height: 25px;
-  position: relative;
-  left: 25px;
-  top: -35px;
 
 }
 
@@ -73,13 +64,15 @@ p {
 
   font-size: 150%;
   font-family: 'Playfair Display', serif;
+  margin-top: 48px;
+  max-width: 500px;
 
 }
 
 
-a{
+a {
 
-  color: #555;
+  color: var(--dark-text-color);
   text-decoration: none;
 
   -webkit-transition-duration: 0.2s;
@@ -97,59 +90,36 @@ a{
 
 a:hover{
 
-  margin-bottom: 5px;
+  padding-bottom: 5px;
   border-bottom: 3px solid;
   visibility:inherit;
-  color:#000;
+  color: var(--darker-text-color);
 
 }
 
-a.ar:hover {
+nav > a {
 
-  border-bottom: none;
-  cursor: default;
+ margin-right: 8px; 
 
 }
 
 @media screen and (prefers-color-scheme: dark) {
   body {
 
-    background-color: #222;
-    color: #eee;
-
-  }
-
-  #background{
-
-    border-color: #222;
+    background-color: var(--dark-bg-color);
+    color: var(--light-text-color);
 
   }
 
   a {
 
-    color: #eee;
+    color: var(--light-text-color);
 
   }
 
   a:hover{
 
-    color: white;
-
-  }
-
-}
-
-@media screen and (max-width: 550px) {
-
-  .block_content{
-
-    margin: 0 15px 0 15px;
-
-  }
-
-  .block_content p{
-
-    font-size: 100%;
+    color: var(--lighter-text-color);
 
   }
 
