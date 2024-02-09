@@ -53,44 +53,6 @@ body{
 
 }
 
-.list_content{
-
-  position: relative;
-  display: block;
-  text-align: left;
-  text-rendering: optimizeLegibility;
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  font-size: 100%;
-  line-height: 1.5;
-  text-transform: none;
-  letter-spacing: 0em;
-  color: #555;
-  margin: 0 auto;
-  width: 500px;
-
-}
-
-h1{
-
-  font-weight: 700;
-  color: #fff;
-
-}
-
-h1.black {
-
-  color: black;
-
-}
-
-h3 a{
-
-  color: #555;
-  text-decoration: none;
-
-}
-
 #ar-preview {
 
   max-width: 200px;
@@ -111,24 +73,6 @@ p {
 
   font-size: 150%;
   font-family: 'Playfair Display', serif;
-
-}
-
-nav.wide{
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content:flex-start;
-  flex-wrap: wrap;
-
-}
-
-.link-nav + .link-nav, .link-nav-wide + .link-nav-wide {
-
-  margin-left: 25px;
 
 }
 
@@ -167,63 +111,6 @@ a.ar:hover {
 
 }
 
-ul {
-
-  padding-left: 1em;
-
-}
-
-li {
-
-  list-style: none;
-
-}
-
-#alternativeHeadline{
-
-  display: none;
-
-}
-
-button{
-
-  height: 50px;
-  padding: 0px 20px 0px 20px;
-  border-color: #0033cc;
-  border-style: solid;
-  border-width: 3px;
-  text-align: center;
-  transition: all 120ms linear;
-  font-size: 1em;
-  font-weight: bold;
-  color: #0029A3;
-  background-color: white;
-  text-transform: uppercase;
-
-}
-
-button:hover{
-
-  box-shadow: 0px 7px 20px #ddd;
-  background-color: #0033cc;
-  color: white;
-  cursor: pointer;
-  -webkit-transform: translate(0,-3px);
-  -moz-transform: translate(0,-3px);
-  -o-transform: translate(0,-3px);
-  -ms-transform: translate(0,-3px);
-  transform: translate(0,-3px);
-
-}
-
-button:active{
-
-  background-color: #002182;
-  border-color: #002182;
-  transition: all 120ms linear;
-
-}
-
 @media screen and (prefers-color-scheme: dark) {
   body {
 
@@ -234,26 +121,13 @@ button:active{
 
   #background{
 
-    /*background-color: #222;*/
     border-color: #222;
-
-  }
-
-  h1{
-
-    color: #0033CC;
 
   }
 
   a {
 
     color: #eee;
-
-  }
-
-  h1.black {
-
-      color: #eee;
 
   }
 
@@ -265,44 +139,7 @@ button:active{
 
 }
 
-@media print{
-
-  #alternativeHeadline{
-
-    display: inherit;
-
-  }
-
-  #timer{
-
-    display: none;
-
-  }
-
-}
-
 @media screen and (max-width: 550px) {
-
-  nav.wide{
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-top: 50px;
-  
-  }
-  
-  .link-nav-wide + .link-nav-wide {
-  
-    margin-left: 0px;
-    margin-top: 20px;
-  
-  }
 
   .block_content{
 
