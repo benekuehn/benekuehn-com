@@ -1,14 +1,101 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+
+@keyframes bounceUpLight {
+    0% {
+        transform: translateY(0);
+        background-color: var(--lighter-text-color);
+    }
+    20% {
+        transform: translateY(12px);
+    }
+    40% {
+        transform: translateY(8px);
+    }
+    60% {
+        transform: translateY(12px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceDownLight {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-12px);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+    60% {
+        transform: translateY(-12px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        background-color: var(--light-text-color);
+    }
+}
+
+@keyframes bounceUpDark {
+    0% {
+        transform: translateY(0);
+        background-color: var(--darker-text-color);
+    }
+    20% {
+        transform: translateY(12px);
+    }
+    40% {
+        transform: translateY(8px);
+    }
+    60% {
+        transform: translateY(12px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceDownDark {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-12px);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+    60% {
+        transform: translateY(-12px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        background-color: var(--dark-text-color);
+    }
+}
 
 :root {
-    --light-bg-color: #eee;
-    --dark-bg-color: #1a1a1a;
-    --light-text-color: #aaa;
-    --lighter-text-color: #eee;
-    --dark-text-color: #444;
-    --darker-text-color: #000;
+    --light-bg-color: #f3f4f6;
+    --dark-bg-color: #030712;
+    --light-text-color: #9ca3af;
+    --lighter-text-color: #f9fafb;
+    --dark-text-color: #4b5563;
+    --darker-text-color: #030712;
 }
 
 html {
@@ -19,7 +106,7 @@ html {
     line-height: 1.5;
     text-transform: none;
     letter-spacing: 0em;
-    color: var(--light-text-color);
+    color: var(--dark-text-color);
 }
 
 body {
@@ -40,13 +127,34 @@ body {
     padding: 0 16px;
 }
 
-a.dots:hover {
-    border-bottom: none;
-    cursor: default;
+.dots {
+    display: flex;
+    gap: 8px;
 }
 
-#ar-preview {
-    max-width: 200px;
+.dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--dark-text-color);
+    transition: transform 0.2s ease-in-out;
+}
+
+.dots:hover > .dot {
+    animation: bounceUpDark 0.5s ease-in-out, bounceDownDark 0.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.dots:hover > #dot-1 {
+    animation-delay: 0ms;
+}
+
+.dots:hover > #dot-2 {
+    animation-delay: 100ms;
+}
+
+.dots:hover > #dot-3 {
+    animation-delay: 200ms;
 }
 
 p {
@@ -87,6 +195,15 @@ nav > a {
     body {
         background-color: var(--dark-bg-color);
         color: var(--light-text-color);
+    }
+
+    .dots:hover > .dot {
+        animation: bounceUpLight 0.5s ease-in-out, bounceDownLight 0.5s ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .dot {
+        background-color: var(--light-text-color);
     }
 
     a {
