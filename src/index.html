@@ -1,51 +1,214 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Website of Benedikt Kuehn" />
+        <meta name="description" content="Benedikt Kuehn — Product Engineer." />
         <title>Benedikt Kuehn</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            rel="preconnect"
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap"
+            rel="stylesheet"
         />
-        <link
-            rel="preconnect"
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
-        />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
 
-        <link href="global.css" rel="stylesheet" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
-        <link rel="icon" href="favicon.ico" sizes="any" />
-        <link rel="icon" href="icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <style>
+            :root {
+                --bg: #fdfdfd;
+                --ink: #111111;
+                --meta: #888888;
+                --dash: #dddddd;
+                --ease: cubic-bezier(0.2, 0, 0, 1);
+                ::selection {
+                    background-color: var(--ink);
+                    color: var(--bg);
+                }
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --bg: #050505;
+                    --ink: #e5e5e5;
+                    --meta: #737373;
+                    --dash: #333333;
+                }
+            }
+
+            /* --- RESET --- */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: var(--bg);
+                color: var(--ink);
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 40px;
+                overflow: hidden;
+                transition: background-color 0.5s ease, color 0.5s ease;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-rendering: optimizeLegibility;
+            }
+
+            header {
+                font-family: "Geist", sans-serif;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: var(--meta);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                animation: slideIn 1.2s var(--ease) forwards;
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            .name {
+                color: var(--ink);
+                font-weight: 600;
+            }
+
+            .dash {
+                color: var(--dash);
+                transition: color 0.5s ease;
+            }
+
+            main {
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 680px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-family: "Newsreader", serif;
+                font-size: clamp(1.8rem, 4vw, 2.4rem);
+                font-weight: 300;
+                line-height: 1.35;
+                letter-spacing: -0.015em;
+
+                animation: blurIn 1.5s var(--ease) forwards;
+                animation-delay: 0.2s;
+                opacity: 0;
+                filter: blur(4px);
+            }
+
+            h1 em {
+                font-family: "Newsreader", serif;
+                font-style: italic;
+                font-weight: 400;
+                color: var(--ink);
+            }
+
+            nav {
+                font-family: "Geist", sans-serif;
+                font-size: 13px;
+                font-weight: 500;
+                display: flex;
+                gap: 32px;
+
+                animation: slideUp 1.2s var(--ease) forwards;
+                animation-delay: 0.4s;
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            a {
+                color: var(--ink);
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                transition: opacity 0.3s ease;
+            }
+
+            a:focus-visible {
+                outline: 2px solid var(--ink);
+                outline-offset: 4px;
+                border-radius: 2px; /* Slight softening */
+            }
+
+            a:active {
+                transform: scale(0.96);
+                transition: transform 0.1s ease;
+            }
+
+            nav:hover a {
+                opacity: 0.3;
+            }
+
+            nav:hover a:hover {
+                opacity: 1;
+            }
+
+            @keyframes slideIn {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            @keyframes slideUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            @keyframes blurIn {
+                to {
+                    opacity: 1;
+                    filter: blur(0);
+                }
+            }
+
+            @media (max-width: 600px) {
+                body {
+                    padding: 24px;
+                }
+                h1 {
+                    text-align: left;
+                    font-size: 1.75rem;
+                }
+                nav {
+                    gap: 24px;
+                }
+            }
+        </style>
     </head>
 
     <body>
-        <div class="content-wrapper">
-            <div class="content">
-                <div class="dots">
-                    <div class="dot" id="dot-1"></div>
-                    <div class="dot" id="dot-2"></div>
-                    <div class="dot" id="dot-3"></div>
-                </div>
+        <header>
+            <span class="name">Benedikt Kuehn</span>
+            <span class="dash">—</span>
+            <span>Product Engineer</span>
+        </header>
 
-                <p>
-                    I am still work in progress & learning every day. Product engineer + product
-                    manager.
-                </p>
+        <main>
+            <h1>
+                To the user, the logic and the aesthetic are not distinct;
+                <em>they are the experience.</em>
+                <br /><br />
+                I serve the conversation where these disciplines dissolve into one another, ensuring
+                the product feels not just assembled, but <em>just right.</em>
+            </h1>
+        </main>
 
-                <nav>
-                    <a href="mailto:benekuehn@icloud.com" class="link-nav">mail</a>
-                    <a href="https://www.linkedin.com/in/benediktkuehn" class="link-nav"
-                        >linkedin</a
-                    >
-                    <a href="https://github.com/benekuehn" class="link-nav">github</a>
-                </nav>
-            </div>
-        </div>
+        <nav>
+            <a href="https://github.com/benekuehn" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/benediktkuehn" target="_blank">LinkedIn</a>
+            <a href="mailto:benekuehn@icloud.com">Email</a>
+        </nav>
     </body>
 </html>
