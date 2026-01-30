@@ -9,6 +9,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap"
+        />
+        <link
             href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap"
             rel="stylesheet"
         />
@@ -22,6 +27,9 @@
                 --meta: #888888;
                 --dash: #dddddd;
                 --ease: cubic-bezier(0.2, 0, 0, 1);
+                --t-fast: 150ms;
+                --t-med: 250ms;
+                --t-slow: 400ms;
                 ::selection {
                     background-color: var(--ink);
                     color: var(--bg);
@@ -32,7 +40,7 @@
                 :root {
                     --bg: #050505;
                     --ink: #e5e5e5;
-                    --meta: #737373;
+                    --meta: #9a9a9a;
                     --dash: #333333;
                 }
             }
@@ -53,7 +61,7 @@
                 justify-content: space-between;
                 padding: 40px;
                 overflow: hidden;
-                transition: background-color 0.5s ease, color 0.5s ease;
+                transition: background-color var(--t-slow) ease, color var(--t-slow) ease;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
                 text-rendering: optimizeLegibility;
@@ -82,7 +90,7 @@
 
             .dash {
                 color: var(--dash);
-                transition: color 0.5s ease;
+                transition: color var(--t-slow) ease;
             }
 
             main {
@@ -127,13 +135,17 @@
                 transform: translateY(10px);
             }
 
-            a {
-                color: var(--ink);
-                text-decoration: none;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                transition: opacity 0.3s ease;
-            }
+                a {
+                    color: var(--ink);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                    display: inline-flex;
+                    align-items: center;
+                    min-height: 44px;
+                    padding: 6px 4px;
+                    transition: opacity var(--t-med) ease;
+                }
 
             a:focus-visible {
                 outline: 2px solid var(--ink);
@@ -141,17 +153,21 @@
                 border-radius: 2px; /* Slight softening */
             }
 
-            a:active {
-                transform: scale(0.96);
-                transition: transform 0.1s ease;
+            @media (hover: hover) and (pointer: fine) {
+                nav:hover a {
+                    opacity: 0.3;
+                }
+
+                nav:hover a:hover {
+                    opacity: 1;
+                }
             }
 
-            nav:hover a {
-                opacity: 0.3;
-            }
-
-            nav:hover a:hover {
-                opacity: 1;
+            @media (hover: none) and (pointer: coarse) {
+                a:active {
+                    transform: scale(0.98);
+                    transition: transform var(--t-fast) ease;
+                }
             }
 
             @keyframes slideIn {
@@ -185,6 +201,25 @@
                     gap: 24px;
                 }
             }
+
+            @media (prefers-reduced-motion: reduce) {
+                body {
+                    transition: none;
+                }
+
+                header,
+                h1,
+                nav {
+                    animation: none;
+                    opacity: 1;
+                    transform: none;
+                    filter: none;
+                }
+
+                a {
+                    transition: none;
+                }
+            }
         </style>
     </head>
 
@@ -206,8 +241,10 @@
         </main>
 
         <nav>
-            <a href="https://github.com/benekuehn" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/benediktkuehn" target="_blank">LinkedIn</a>
+            <a href="https://github.com/benekuehn" target="_blank" rel="noopener noreferrer">Github</a>
+            <a href="https://www.linkedin.com/in/benediktkuehn" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
             <a href="mailto:benekuehn@icloud.com">Email</a>
         </nav>
     </body>
